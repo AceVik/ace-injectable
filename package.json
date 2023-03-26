@@ -1,6 +1,7 @@
 {
 	"name": "@ace/injectable",
 	"version": "1.0.1",
+	"description": "@ace/injectable is a typescript decorators package to mark things as injectable and inject them into class properties.",
 	"type": "module",
 	"license": "MIT",
 	"repository": {
