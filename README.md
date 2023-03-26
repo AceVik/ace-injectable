@@ -1,5 +1,5 @@
-## @ace/injectable
-> @ace/injectable is a typescript decorators package to mark
+## @ace-pkg/injectable
+> @ace-pkg/injectable is a typescript decorators package to mark
 > things as injectable and inject them into class properties.
 > 
 > It uses singleton pattern von injectable classes.
@@ -8,9 +8,9 @@
 First, install the package:
 
 ```bash
-npm install @ace/injectable
-yarn add @ace/injectable
-pnpm add @ace/injectable
+npm install @ace-pkg/injectable
+yarn add @ace-pkg/injectable
+pnpm add @ace-pkg/injectable
 ```
 
 ## Define a class as injectable
@@ -19,7 +19,7 @@ Define the first **Injectable**, by using the `Injectable` decorator:
 <!--TypeScript-->
 
 ```ts
-import { Injectable } from '@ace/injectable';
+import { Injectable } from '@ace-pkg/injectable';
 
 @Injectable('service')
 export class MyService {
@@ -36,7 +36,7 @@ Use the `Inject` decorator to inject a `MyService` singleton as a property.
 
 <!--TypeScript-->
 ```ts
-import { Inject } from '@ace/injectable';
+import { Inject } from '@ace-pkg/injectable';
 import { MyService } from './my-service';
 
 class MyClass {
