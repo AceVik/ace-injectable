@@ -1,0 +1,41 @@
+{
+	"name": "@ace/injectable",
+	"version": "1.0.1",
+	"type": "module",
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/AceVik/ace-injectable.git",
+		"directory": "packages/@ace/injectable"
+	},
+	"homepage": "https://github.com/AceVik/ace-injectable",
+	"keywords": [
+		"typescript",
+		"decorator",
+		"decorators",
+		"inject",
+		"injectable",
+		"ace",
+		"service",
+		"class",
+		"di"
+	],
+	"publishConfig": {
+		"access": "public"
+	},
+	"author": {
+		"name": "AceVik",
+		"email": "mail@acevik.de"
+	},
+	"dependencies": {
+		"typescript": "^5.0.2"
+	},
+	"devDependencies": {
+		"@types/jest": "^29.5.0",
+		"jest": "^29.5.0",
+		"ts-jest": "^29.0.5"
+	},
+	"scripts": {
+		"test": "jest"
+	}
+}
