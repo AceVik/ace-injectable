@@ -17,13 +17,16 @@ pnpm add @ace/injectable
 Define the first **Injectable**, by using the `Injectable` decorator:
 
 <!--TypeScript-->
+
 ```ts
 import { Injectable } from '@ace/injectable';
 
-@Injectable()
+@Injectable('service')
 export class MyService {
+    constructor(private message: string) {}
+
     public printExample() {
-        console.log('example');
+        console.log('example-' + this.message);
     }
 }
 ```
@@ -46,7 +49,7 @@ class MyClass {
 <!--TypeScript-->
 ```ts
 const obj = new MyClass();
-obj.myService.printExample(); // => example
+obj.myService.printExample(); // => example-service
 ```
 
 ## Conclusion
