@@ -33,7 +33,7 @@ Use the `Inject` decorator to inject a `MyService` singleton as a property.
 
 <!--TypeScript-->
 ```ts
-import { Injectable } from '@ace/injectable';
+import { Inject } from '@ace/injectable';
 import { MyService } from './my-service';
 
 class MyClass {
